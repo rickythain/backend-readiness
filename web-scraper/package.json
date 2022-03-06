@@ -1,5 +1,5 @@
 {
-  "name": "server_api",
+  "name": "web-scraper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.2",
-    "cors": "^2.8.5",
+    "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.3",
-    "node-redis-pubsub": "^5.0.0"
+    "node-redis-pubsub": "^5.0.0",
+    "request-promise": "^4.2.6"
   }
 }

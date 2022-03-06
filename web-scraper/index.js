@@ -7,8 +7,16 @@ const PORT = 5555;
 
 const NRP = require("node-redis-pubsub");
 const nrp = new NRP({
+  host: "redis-server",
   PORT: 6379,
   scope: "microservice",
+});
+
+// just for test
+app.get("/", (req, res) => {
+  return res
+    .status(200)
+    .json({ message: "Hi! You're connected to web-scraper!" });
 });
 
 // listen on channel, call web scraping function
