@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.26.0",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.3",
-    "node-redis-pubsub": "^5.0.0",
-    "request-promise": "^4.2.6"
+    "node-redis-pubsub": "^5.0.0"
   }
 }

@@ -1,0 +1,19 @@
+version: "3"
+services:
+  redis-server:
+    image: "redis"
+  web-scraper:
+    build: ./web-scraper
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis-server
+  api-server:
+    build: ./server-api
+    ports:
+      - "4444:4444"
+    depends_on:
+      - web-scraper
+      - deriv-data-processor
+  deriv-data-processor:
+    build: ./deriv-data-processor
